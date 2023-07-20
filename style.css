@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-rendering: optimizeLegibility;
+    padding: 20px;
+}
+#todo-list{
+    text-align: center;
+    max-width: 50rem;
+    margin: 10% auto 0;
+}
+h1 {
+    margin-bottom: .3125rem;
+}
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+span {
+    font-size: .875rem;
+    
+    cursor: pointer;
+}
+span:last-child {
+    color: rgb(243, 26, 26);
+    margin-left: .625rem;
+}
+#todo-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: .625rem;
+}
+@media (max-width: 38.6875rem) {
+    #todo-form {
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
+    }
+    button {
+        margin-top: 5px;
+    }
+}
+#todo-input {
+    width: 70%;
+    height: 2.9375rem;
+    padding: 15px;
+    border: 1px solid blueviolet;
+    outline: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+::placeholder {
+    font-size: 17px;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+#todo-input:focus::placeholder {
+    opacity: .7;
+}
+#tasks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    margin-bottom: .625rem;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 15px;
+    max-width: 31.25rem;
+    margin: 0 auto .625rem;
+    font-size: .9375rem;
+    border: none;
+    outline: none;
+    overflow-wrap: break-word;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    height: 2.9375rem;
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+button:hover {
+    background-color: #ceccccee;
+}
